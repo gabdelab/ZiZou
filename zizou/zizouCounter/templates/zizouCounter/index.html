@@ -1,0 +1,17 @@
+<h1>ZiZou Project</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'index' %}" method="post">
+{% csrf_token %}
+  <p>First Int: <input name="firstInt" value="{{ firstInt }}" /></p>
+  <p>Second Int: <input name="secondInt" value="{{ secondInt }}" /></p>
+  <p>First String: <input name="firstString" value="{{ firstString }}" /></p>
+  <p>Second String: <input name="secondString" value="{{ secondString }}" /></p>
+  <p>Max Value: <input name="maxValue" value="{{ maxValue }}" /></p>
+<input type="submit" value="Submit" />
+</form>
+
+{% if myResult %}
+  <h2>{{ myResult }}</h2>
+{% endif %}
