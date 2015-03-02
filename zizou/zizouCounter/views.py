@@ -11,7 +11,7 @@ DEFAULT_VALUES = {
 
 def computeResults(firstInt, secondInt, firstString, secondString, maxValue):
   """Compute the results of the ZiZou experience."""
-  for i in range(1, maxValue):
+  for i in range(1, maxValue + 1):
     if i % firstInt == 0:
       if i % secondInt == 0:
         yield firstString + secondString
