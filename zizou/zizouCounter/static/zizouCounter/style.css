@@ -1,0 +1,12 @@
+body {
+  background: white url("images/zizou_scooter.jpeg") no-repeat right top;
+  background-size: 300px 300px;
+}
+
+p {
+  color: green;
+}
+
+input {
+  color:blue;
+}
