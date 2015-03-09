@@ -10,3 +10,7 @@ p {
 input {
   color:blue;
 }
+
+div#results {
+  background: orange;
+}

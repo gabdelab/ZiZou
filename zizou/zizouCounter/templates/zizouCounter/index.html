@@ -16,6 +16,8 @@
 <input type="submit" value="Submit" />
 </form>
 
-{% if myResult %}
-  <h2>{{ myResult }}</h2>
-{% endif %}
+<div id="results" style="results">
+  {% if myResult %}
+    <h2>{{ myResult }}</h2>
+  {% endif %}
+</div>
